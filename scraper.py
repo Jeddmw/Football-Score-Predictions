@@ -27,7 +27,7 @@ if response.status_code == 200:
             writer = csv.writer(csv_file)
             
             # Write the header row
-            writer.writerow(["Date", "Home Team", "Score", "Away Team"])
+            writer.writerow(["Date", "Home Team", "Home Score", "Away Team", "Away Score"])
             
             # Loop over each row to extract match information
             for row in rows:
